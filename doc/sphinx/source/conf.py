@@ -24,7 +24,7 @@ import shlex
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
 if read_the_docs_build:
-  subprocess.call('cd ../../doxygen; doxygen Doxyfile', shell=True)
+  subprocess.call('cd ../../doxygen; doxygen Doxyfile; pip install breathe', shell=True)
 
 breathe_projects = {
     "staminalibcapi":"../../doxygen/xml/",
