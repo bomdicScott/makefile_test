@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to Stamina Lib C API’s documentation! &mdash; Stamina Lib C API 0.9.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Stamina Lib C API 0.9.1 documentation" href="#"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Stamina Lib C API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="simple">
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Stamina Lib C API</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+      
+    <li>Welcome to Stamina Lib C API&#8217;s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-stamina-lib-c-api-s-documentation">
+<h1>Welcome to Stamina Lib C API&#8217;s documentation!<a class="headerlink" href="#welcome-to-stamina-lib-c-api-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<p>C API for stamina library </p>
+<div class="breathe-sectiondef container">
+<p class="breathe-sectiondef-title rubric">Functions</p>
+<dl class="function">
+<dt id="_CPPv28User_newv">
+<span id="User_new"></span><span class="target" id="staminalibcapilib__c__api_8h_1aa7a646fcc8e9a223f76f4611fe35db97"></span>User *<code class="descname">User_new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv28User_newv" title="Permalink to this definition">¶</a></dt>
+<dd><p>New a default user object having stamina analysis functions. </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>a user object </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv213User_new_withiiiiiiiddddlddid">
+<span id="User_new_with__i.i.i.i.i.i.i.double.double.double.double.l.double.double.i.double"></span><span class="target" id="staminalibcapilib__c__api_8h_1a3c90df160b79552daf190799d848a493"></span>User *<code class="descname">User_new_with</code><span class="sig-paren">(</span>int <em>pAge</em>, int <em>pGender</em>, int <em>pWeight</em>, int <em>pHeight</em>, int <em>pBioMaxHr</em>, int <em>pBioMaxHrSportType</em>, int <em>pBioRestHr</em>, double <em>pFatPtc</em>, double <em>pMusclePtc</em>, double <em>pBonePtc</em>, double <em>pWaterPtc</em>, long <em>pMaxRecordingLength</em>, double <em>pAeroTotalCapacity</em>, double <em>pAeroCapacity</em>, int <em>pLADilutionGrade</em>, double <em>pAnaerobicPtc</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv213User_new_withiiiiiiiddddlddid" title="Permalink to this definition">¶</a></dt>
+<dd><p>New a user object having stamina analysis functions with specific user parameters. </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">pAge</span></code> - <p>[int] Age of user. Valid range from 10 ~ 100. </p>
+</li>
+<li><code class="first docutils literal"><span class="pre">pGender</span></code> - <p>gender of user </p>
+</li>
+<li><code class="first docutils literal"><span class="pre">pWeight</span></code> - <p>weight of user </p>
+</li>
+<li><code class="first docutils literal"><span class="pre">pHeight</span></code> - <p>height of user </p>
+</li>
+<li><code class="first docutils literal"><span class="pre">pBioMaxHr</span></code> - <p>bio max HR of user </p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>a user object</dd>
+<dt><strong>Example:</strong></dt>
+<dd> <div class="highlight-python"><div class="highlight"><pre>User* user_ptr = User_new_with(int pAge, 
+                               int pGender, 
+                               int pWeight, 
+                               int pHeight, 
+                               int pBioMaxHr, 
+                               int pBioMaxHrSportType, 
+                               int pBioRestHr, 
+                               double pFatPtc, 
+                               double pMusclePtc, 
+                               double pBonePtc, 
+                               double pWaterPtc, 
+                               long pMaxRecordingLength, 
+                               double pAeroTotalCapacity, 
+                               double pAeroCapacity, 
+                               int pLADilutionGrade, 
+                               double pAnaerobicPtc)
+</pre></div>
+</div>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv232User_update_new_heartrate_statusP4Userliiiiiiiiii">
+<span id="User_update_new_heartrate_status__UserP.l.i.i.i.i.i.i.i.i.i.i"></span><span class="target" id="staminalibcapilib__c__api_8h_1a79300b1748a0ba5452b407dbeb4d889c"></span>int <code class="descname">User_update_new_heartrate_status</code><span class="sig-paren">(</span>User *<em>pUserPtr</em>, long <em>pTimeSec</em>, int <em>pHr</em>, int <em>pHrQuality</em>, int <em>pHrPosition</em>, int <em>pDeviceBrand</em>, int <em>pRRI1</em>, int <em>pRRI2</em>, int <em>pRRI3</em>, int <em>pRRI4</em>, int <em>pRRI5</em>, int <em>pRRI6</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv232User_update_new_heartrate_statusP4Userliiiiiiiiii" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv229User_update_new_physic_statusP4Userlddiddddddddd">
+<span id="User_update_new_physic_status__UserP.l.double.double.i.double.double.double.double.double.double.double.double.double"></span><span class="target" id="staminalibcapilib__c__api_8h_1a864731cdf38b20be904f12101f9378c8"></span>int <code class="descname">User_update_new_physic_status</code><span class="sig-paren">(</span>User *<em>pUserPtr</em>, long <em>pTimeSec</em>, double <em>pSessionDistKm</em>, double <em>pSpeedKmph</em>, int <em>pExerciseType</em>, double <em>pFrontArea</em>, double <em>pSlopGrade</em>, double <em>pWindSpeedKmph</em>, double <em>pAirTemp</em>, double <em>pLongitude</em>, double <em>pLatitude</em>, double <em>pAltitude</em>, double <em>pPower</em>, double <em>pCadence</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv229User_update_new_physic_statusP4Userlddiddddddddd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv241User_get_user_now_meta_session_total_kcalP4User">
+<span id="User_get_user_now_meta_session_total_kcal__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a257fb06bd056603bede0c4b2a810e4bc"></span>double <code class="descname">User_get_user_now_meta_session_total_kcal</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv241User_get_user_now_meta_session_total_kcalP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv244User_get_user_now_meta_session_exercise_kcalP4User">
+<span id="User_get_user_now_meta_session_exercise_kcal__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a2bd7141538f59c95ad9b886eb65284f1"></span>double <code class="descname">User_get_user_now_meta_session_exercise_kcal</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv244User_get_user_now_meta_session_exercise_kcalP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv239User_get_user_now_meta_session_BMR_kcalP4User">
+<span id="User_get_user_now_meta_session_BMR_kcal__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ad4b1c6a422be5f628ed602bd33517773"></span>double <code class="descname">User_get_user_now_meta_session_BMR_kcal</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv239User_get_user_now_meta_session_BMR_kcalP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv229User_get_user_now_stamina_ptcP4User">
+<span id="User_get_user_now_stamina_ptc__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a688763f4c555288b9598d76a35e994c8"></span>double <code class="descname">User_get_user_now_stamina_ptc</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv229User_get_user_now_stamina_ptcP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv229User_get_user_now_aerobic_ptcP4User">
+<span id="User_get_user_now_aerobic_ptc__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a8cd2aa2a1838ad07d233b9e78d73b19a"></span>double <code class="descname">User_get_user_now_aerobic_ptc</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv229User_get_user_now_aerobic_ptcP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_now_anaerobic_ptcP4User">
+<span id="User_get_user_now_anaerobic_ptc__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a3faa3d438b752b2d4223338e167dae02"></span>double <code class="descname">User_get_user_now_anaerobic_ptc</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_now_anaerobic_ptcP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_now_aero_capacityP4User">
+<span id="User_get_user_now_aero_capacity__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1aaf7e311cfc71b8bef0ca1dd8dd0eda61"></span>double <code class="descname">User_get_user_now_aero_capacity</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_now_aero_capacityP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv237User_get_user_now_aero_total_capacityP4User">
+<span id="User_get_user_now_aero_total_capacity__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ae2c17616f307a2b68587598f0e670dd0"></span>double <code class="descname">User_get_user_now_aero_total_capacity</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv237User_get_user_now_aero_total_capacityP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv223User_get_user_now_lacidP4User">
+<span id="User_get_user_now_lacid__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1acd7e48ea41eb0688d2473e6023130c7e"></span>double <code class="descname">User_get_user_now_lacid</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv223User_get_user_now_lacidP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv235User_get_user_now_LA_dilution_gradeP4User">
+<span id="User_get_user_now_LA_dilution_grade__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a25b77ac03390fd25caaad59301178e68"></span>int <code class="descname">User_get_user_now_LA_dilution_grade</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv235User_get_user_now_LA_dilution_gradeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv251User_get_user_now_predicted_avg_pace_max_conti_burnP4User">
+<span id="User_get_user_now_predicted_avg_pace_max_conti_burn__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ae1562aa75ee85fd5ad350aeb73be394f"></span>double <code class="descname">User_get_user_now_predicted_avg_pace_max_conti_burn</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv251User_get_user_now_predicted_avg_pace_max_conti_burnP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv263User_get_user_now_predicted_avg_pace_max_burn_with_stamina_leftP4User">
+<span id="User_get_user_now_predicted_avg_pace_max_burn_with_stamina_left__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a7bb4d30e0291e747ce1d7fe89a6da752"></span>double <code class="descname">User_get_user_now_predicted_avg_pace_max_burn_with_stamina_left</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv263User_get_user_now_predicted_avg_pace_max_burn_with_stamina_leftP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv252User_get_user_now_predicted_last_pace_max_conti_burnP4User">
+<span id="User_get_user_now_predicted_last_pace_max_conti_burn__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a28728fd17c736b36be939de01a6204fa"></span>double <code class="descname">User_get_user_now_predicted_last_pace_max_conti_burn</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv252User_get_user_now_predicted_last_pace_max_conti_burnP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv264User_get_user_now_predicted_last_pace_max_burn_with_stamina_leftP4User">
+<span id="User_get_user_now_predicted_last_pace_max_burn_with_stamina_left__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ab7728ec1791636eb16a79802609dfec9"></span>double <code class="descname">User_get_user_now_predicted_last_pace_max_burn_with_stamina_left</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv264User_get_user_now_predicted_last_pace_max_burn_with_stamina_leftP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv254User_get_user_now_predicted_avg_pace_max_conti_dist_kmP4User">
+<span id="User_get_user_now_predicted_avg_pace_max_conti_dist_km__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a2b19fb6eb6da88cc9d6ff46dce1fb085"></span>double <code class="descname">User_get_user_now_predicted_avg_pace_max_conti_dist_km</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv254User_get_user_now_predicted_avg_pace_max_conti_dist_kmP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv264User_get_user_now_predicted_avg_pace_time_sec_for_max_conti_distP4User">
+<span id="User_get_user_now_predicted_avg_pace_time_sec_for_max_conti_dist__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a06de0d915e75119ec30738873265913d"></span>double <code class="descname">User_get_user_now_predicted_avg_pace_time_sec_for_max_conti_dist</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv264User_get_user_now_predicted_avg_pace_time_sec_for_max_conti_distP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv266User_get_user_now_predicted_avg_pace_max_dist_km_with_stamina_leftP4User">
+<span id="User_get_user_now_predicted_avg_pace_max_dist_km_with_stamina_left__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ae75d51739653b97135ac10fb3dbe985e"></span>double <code class="descname">User_get_user_now_predicted_avg_pace_max_dist_km_with_stamina_left</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv266User_get_user_now_predicted_avg_pace_max_dist_km_with_stamina_leftP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv255User_get_user_now_predicted_last_pace_max_conti_dist_kmP4User">
+<span id="User_get_user_now_predicted_last_pace_max_conti_dist_km__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a373b9319e3f36c4844bb7fad2c1b86e2"></span>double <code class="descname">User_get_user_now_predicted_last_pace_max_conti_dist_km</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv255User_get_user_now_predicted_last_pace_max_conti_dist_kmP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv265User_get_user_now_predicted_last_pace_time_sec_for_max_conti_distP4User">
+<span id="User_get_user_now_predicted_last_pace_time_sec_for_max_conti_dist__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a4efe1993bf991396655fd9521069b1fc"></span>double <code class="descname">User_get_user_now_predicted_last_pace_time_sec_for_max_conti_dist</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv265User_get_user_now_predicted_last_pace_time_sec_for_max_conti_distP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv267User_get_user_now_predicted_last_pace_max_dist_km_with_stamina_leftP4User">
+<span id="User_get_user_now_predicted_last_pace_max_dist_km_with_stamina_left__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ac20c2b561748abe2e8f51bbee2ab8cce"></span>double <code class="descname">User_get_user_now_predicted_last_pace_max_dist_km_with_stamina_left</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv267User_get_user_now_predicted_last_pace_max_dist_km_with_stamina_leftP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv237User_get_user_now_predicted_sudo_VDOTP4User">
+<span id="User_get_user_now_predicted_sudo_VDOT__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a643b3023897068c7c9c215035fd078c2"></span>double <code class="descname">User_get_user_now_predicted_sudo_VDOT</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv237User_get_user_now_predicted_sudo_VDOTP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_session_VDOTP4User">
+<span id="User_get_user_session_VDOT__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ab029bc5b4cd6cba3dd272f62a54624bc"></span>double <code class="descname">User_get_user_session_VDOT</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_session_VDOTP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv229User_get_user_now_heartD_timeP4User">
+<span id="User_get_user_now_heartD_time__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a17d08c52b9edab1eb8cc7be636793dae"></span>long <code class="descname">User_get_user_now_heartD_time</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv229User_get_user_now_heartD_timeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_now_staminaD_timeP4User">
+<span id="User_get_user_now_staminaD_time__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a27996813016ce4639c50d1fe7fcb186b"></span>long <code class="descname">User_get_user_now_staminaD_time</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_now_staminaD_timeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv230User_get_user_now_physicD_timeP4User">
+<span id="User_get_user_now_physicD_time__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a51b53b155810f6b7e7cb022c036ca9cc"></span>long <code class="descname">User_get_user_now_physicD_time</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv230User_get_user_now_physicD_timeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv237User_get_user_now_predicted_burn_timeP4User">
+<span id="User_get_user_now_predicted_burn_time__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a142cb5cddcfe49516d0c9687c1dcf01b"></span>long <code class="descname">User_get_user_now_predicted_burn_time</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv237User_get_user_now_predicted_burn_timeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv237User_get_user_now_predicted_dist_timeP4User">
+<span id="User_get_user_now_predicted_dist_time__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1af93dae036d6508a7d64066cae4b1f0c4"></span>long <code class="descname">User_get_user_now_predicted_dist_time</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv237User_get_user_now_predicted_dist_timeP4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv225User_get_user_HR_by_HRR_0P4User">
+<span id="User_get_user_HR_by_HRR_0__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1ad8a236b5fe435b54e4e6455fbf980481"></span>int <code class="descname">User_get_user_HR_by_HRR_0</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv225User_get_user_HR_by_HRR_0P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_HR_by_HRR_50P4User">
+<span id="User_get_user_HR_by_HRR_50__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a45914dc0693bacac9a518fc7c53b0c87"></span>int <code class="descname">User_get_user_HR_by_HRR_50</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_HR_by_HRR_50P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_HR_by_HRR_60P4User">
+<span id="User_get_user_HR_by_HRR_60__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1aab9017dfbbdec4b2fc264c79b94b9794"></span>int <code class="descname">User_get_user_HR_by_HRR_60</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_HR_by_HRR_60P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_HR_by_HRR_70P4User">
+<span id="User_get_user_HR_by_HRR_70__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a16db31775280088968ad75925e9c1395"></span>int <code class="descname">User_get_user_HR_by_HRR_70</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_HR_by_HRR_70P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_HR_by_HRR_80P4User">
+<span id="User_get_user_HR_by_HRR_80__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a8ea103d5ca994fe77c5d397bcc869ebc"></span>int <code class="descname">User_get_user_HR_by_HRR_80</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_HR_by_HRR_80P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv226User_get_user_HR_by_HRR_90P4User">
+<span id="User_get_user_HR_by_HRR_90__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1aff3f91a87a0692c8e37a1bcc8ba2f1b8"></span>int <code class="descname">User_get_user_HR_by_HRR_90</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv226User_get_user_HR_by_HRR_90P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv227User_get_user_HR_by_HRR_100P4User">
+<span id="User_get_user_HR_by_HRR_100__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a97c3a91f56dfea7a5aa0a24cdbc57a88"></span>int <code class="descname">User_get_user_HR_by_HRR_100</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv227User_get_user_HR_by_HRR_100P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_HR_by_HRR_D_UP_59P4User">
+<span id="User_get_user_HR_by_HRR_D_UP_59__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a1457b7c17b0f0904f4e3b4c3a1b3a698"></span>int <code class="descname">User_get_user_HR_by_HRR_D_UP_59</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_HR_by_HRR_D_UP_59P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_HR_by_HRR_E_UP_74P4User">
+<span id="User_get_user_HR_by_HRR_E_UP_74__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1af020954ab0d53007d82d9b25141650e0"></span>int <code class="descname">User_get_user_HR_by_HRR_E_UP_74</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_HR_by_HRR_E_UP_74P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_HR_by_HRR_M_UP_84P4User">
+<span id="User_get_user_HR_by_HRR_M_UP_84__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a944c5e8f2de4afd4700bffe8f781a0cf"></span>int <code class="descname">User_get_user_HR_by_HRR_M_UP_84</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_HR_by_HRR_M_UP_84P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_HR_by_HRR_T_UP_88P4User">
+<span id="User_get_user_HR_by_HRR_T_UP_88__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a746bce42c7cd477bb4d68f1d76ba096e"></span>int <code class="descname">User_get_user_HR_by_HRR_T_UP_88</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_HR_by_HRR_T_UP_88P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv231User_get_user_HR_by_HRR_A_UP_95P4User">
+<span id="User_get_user_HR_by_HRR_A_UP_95__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a479126d53ef11a835ff0523c2cf4b599"></span>int <code class="descname">User_get_user_HR_by_HRR_A_UP_95</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv231User_get_user_HR_by_HRR_A_UP_95P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv232User_get_user_HR_by_HRR_I_UP_100P4User">
+<span id="User_get_user_HR_by_HRR_I_UP_100__UserP"></span><span class="target" id="staminalibcapilib__c__api_8h_1a2511975709a061f972590672c726dd9c"></span>int <code class="descname">User_get_user_HR_by_HRR_I_UP_100</code><span class="sig-paren">(</span>User *<em>pUserPtr</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv232User_get_user_HR_by_HRR_I_UP_100P4User" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="_CPPv248User_update_aerobic_anaerobic_result_by_questionP4Useriiii">
+<span id="User_update_aerobic_anaerobic_result_by_question__UserP.i.i.i.i"></span><span class="target" id="staminalibcapilib__c__api_8h_1a8ba344b8353b4b980a68d8caa6c25d98"></span>int <code class="descname">User_update_aerobic_anaerobic_result_by_question</code><span class="sig-paren">(</span>User *<em>pUserPtr</em>, int <em>pFirstTime</em>, int <em>pAnswerBreath</em>, int <em>pAnswerMuscle</em>, int <em>pAnswerRPE</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv248User_update_aerobic_anaerobic_result_by_questionP4Useriiii" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Scott Cheng.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
